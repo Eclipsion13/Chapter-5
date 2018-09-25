@@ -22,24 +22,33 @@ public class RockPaperScissors {
 			if (player == 2) {
 				winner = "You win! Paper beats rock!";
 			}
-			else {
+			else  if (player == 3) {
 				winner = "I win! Rock beats scissors!";
+			}
+			else {
+				winner = "That isn't an option!";
 			}
 		}
 		else if (computer == 2) {
 			if (player == 1) {
 				winner = "I win! Paper beats rock!!";
 			}
-			else {
+			else if (player == 3) {
 				winner = "You win! Scissors beat paper!";
+			}
+			else {
+				winner = "That isn't an option!";
 			}
 		}
 		else {
 			if (player == 1) {
 				winner = "You win! Rock beats scissors!";
 			}
-			else {
+			else  if (player == 2) {
 				winner = "I win! Scissors beat paper!";
+			}
+			else {
+				winner = "That isn't an option!";
 			}
 		}
 		JOptionPane.showMessageDialog(null, "SHOOT!\n" + winner);
